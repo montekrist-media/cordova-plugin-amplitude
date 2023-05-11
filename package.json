@@ -1,0 +1,23 @@
+{
+    "name": "cordova-plugin-amplitude",
+    "version": "1.0.0",
+    "description": "Amplitude plugin for Cordova (https://amplitude.com)",
+    "cordova": {
+        "id": "cordova-plugin-amplitude",
+        "platforms": [
+            "android"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/montekrist-media/cordova-plugin-amplitude"
+    },
+    "keywords": [
+        "cordova",
+        "amplitude",
+        "ecosystem:cordova",
+        "cordova-android"
+    ],
+    "author": "DrMoriarty",
+    "license": "MIT License"
+}
