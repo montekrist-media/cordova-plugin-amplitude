@@ -6,7 +6,6 @@ import java.util.Iterator;
 import java.util.Map;
 
 import org.apache.cordova.CallbackContext;
-import org.apache.cordova.CordovaActivity;
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
@@ -19,6 +18,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.amplitude.api.Amplitude;
 import com.amplitude.api.AmplitudeClient;
@@ -65,7 +65,7 @@ public class AmplitudePlugin extends CordovaPlugin {
     private boolean initSdk(final JSONArray args, final CallbackContext callbackContext) {
 
         try {
-            CordovaActivity activity = (CordovaActivity)this.cordova.getActivity();
+            AppCompatActivity activity = (AppCompatActivity)this.cordova.getActivity();
             String apiKey = null;
             AmplitudeClient client = Amplitude.getInstance();
             apiKey = args.getString(0);
